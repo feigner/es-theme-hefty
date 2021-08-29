@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  theme name:     Hefty
+  version:        0.0.1
+  author:         EFF
+-->
+<theme>
+
+  <formatVersion>4</formatVersion>
+
+  <feature supported="carousel">
+    <view name="system">
+      <carousel name="systemcarousel">
+        <type>horizontal</type>
+        <origin>0.5 0.5</origin>
+        <pos>0.5 0.34</pos>
+        <size>1 0.3</size>
+        <color>000000</color>
+        <logoSize>0.6 0.08</logoSize>
+        <logoScale>1.75</logoScale>
+        <maxLogoCount>1</maxLogoCount>
+      </carousel>
+      <text name="logoText">
+        <fontPath>./_inc/fonts/pixel.ttf</fontPath>
+        <origin>0.5 0</origin>
+        <pos>0.1665 0.03</pos>
+        <fontSize>0.135</fontSize>
+        <color>FFFFFF</color>
+        <forceUppercase>1</forceUppercase>
+        <zIndex>1000</zIndex>
+      </text>
+      <image name="seperator" extra="true">
+        <path>./_inc/images/space.png</path>
+        <origin>0.5 0.5</origin>
+        <pos>0.5 0.50</pos>
+        <size>1 0.005</size>
+        <color>ffffff</color>
+      </image>
+      <text name="systemInfo">
+        <backgroundColor>000000</backgroundColor>
+        <pos>0 0.59</pos>
+        <color>ffffff</color>
+        <fontPath>./_inc/fonts/pixel.ttf</fontPath>
+        <fontSize>0.055</fontSize>
+      </text>
+    </view>
+  </feature>
+
+  <view name="system, detailed, video">
+    <image name="background_alpha" extra="true">
+      <path>./_inc/images/box.png</path>
+      <color>333333BB</color>
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <zIndex>101</zIndex>
+    </image>
+
+    <!-- hide help -->
+    <helpsystem name="help">
+      <origin>0 0</origin>
+      <pos>1 1</pos>
+    </helpsystem>
+  </view>
+
+  <view name="detailed">
+    <!-- thumbnail -->
+    <image name="md_image">
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <maxSize>1 1</maxSize>
+      <zIndex>100</zIndex>
+    </image>
+    <!-- logo -->
+    <image name="md_marquee" extra="true">
+      <origin>0.5 0.5</origin>
+      <pos>0.666 0.79</pos>
+      <maxSize>.35 .15</maxSize>
+      <zIndex>1000</zIndex>
+    </image>
+    <!-- box -->
+    <image name="md_thumbnail" extra="true">
+      <origin>0.4 0.5</origin>
+      <pos>0.666 0.35</pos>
+      <maxSize>.6 .6</maxSize>
+      <zIndex>1000</zIndex>
+      <color>FF0000AA</color>
+    </image>
+  </view>
+
+  <feature supported="video">
+    <view name="video">
+      <video name="md_video">
+        <origin>0.5 0.5</origin>
+        <pos>0.8 0.425</pos>
+        <maxSize>0.3 0.3</maxSize>
+        <delay>2</delay>
+        <showSnapshotNoVideo>true</showSnapshotNoVideo>
+        <showSnapshotDelay>true</showSnapshotDelay>
+      </video>
+    </view>
+  </feature>
+
+  <view name="detailed, video">
+  
+    <image name="background_sidebar" extra="true">
+      <path>./_inc/images/box.png</path>
+      <color>333333E0</color>
+      <origin>0 0</origin>
+      <pos>0 0</pos>
+      <size>.333 1</size>
+      <zIndex>201</zIndex>
+    </image>  
+    <image name="logo">
+      <origin>0.5 0</origin>
+      <pos>0.1665 0.043</pos>
+      <maxSize>0.2 0.12</maxSize>
+      <zIndex>1000</zIndex>
+    </image>
+    <text name="logoText">
+      <fontPath>./_inc/fonts/pixel.ttf</fontPath>
+      <origin>0.5 0</origin>
+      <pos>0.1665 0.03</pos>
+      <fontSize>0.035</fontSize>
+      <color>ffffff</color>
+      <forceUppercase>1</forceUppercase>
+      <zIndex>1000</zIndex>
+    </text>  
+
+    <textlist name="gamelist">
+      <selectorColor>666666ff</selectorColor>
+      <selectedColor>ffffff</selectedColor>
+      <primaryColor>cccccc</primaryColor>
+      <secondaryColor>cccccc</secondaryColor>
+      <fontPath>./_inc/fonts/pixel.ttf</fontPath>
+      <origin>0.5 0</origin>
+      <pos>0.165 0.095</pos>
+      <size>0.333 0.895</size>
+      <alignment>center</alignment>
+      <fontSize>0.0175</fontSize>
+      <lineSpacing>1.65</lineSpacing>
+      <horizontalMargin>0.015</horizontalMargin>
+      <forceUppercase>1</forceUppercase>
+      <zIndex>1000</zIndex>
+    </textlist>
+
+    <!-- metadata-->
+
+    <!-- hide extraneous details -->
+    <text name="md_description, md_genre, md_hidden, md_kidgame, md_lastplayed, md_playcount, md_players, md_publisher, md_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount, md_lbl_players, md_lbl_publisher, md_lbl_rating, md_lbl_releasedate">
+      <origin>0 0</origin>
+      <pos>-1 -1</pos>
+    </text>
+
+    <text name="md_developer, md_playcount, md_players, md_publisher, md_releasedate, md_lbl_developer, md_lbl_playcount, md_lbl_players, md_lbl_publisher, md_lbl_rating, md_lbl_releasedate">
+      <color>FFFFFF</color>
+      <forceUppercase>1</forceUppercase>
+      <fontPath>./_inc/fonts/pixel.ttf</fontPath>
+      <fontSize>0.0175</fontSize>
+      <zIndex>1000</zIndex>
+      <size>0 0.0225</size>
+      <visible>true</visible>
+    </text>
+
+    <rating name="md_rating">
+      <origin>0.5 0.5</origin>
+      <pos>0.723 0.93</pos>
+      <size>0.20 0.0225</size>
+      <zIndex>1000</zIndex>
+      <filledPath>./_inc/images/star_filled.svg</filledPath>
+      <unfilledPath>./_inc/images/star_unfilled.svg</unfilledPath>      
+    </rating>
+
+    <text name="md_playcount">
+      <origin>1 0</origin>
+      <pos>0.656 0.973</pos>          
+    </text>    
+
+    <datetime name="md_releasedate">
+      <origin>0 0</origin>
+      <pos>0.676 0.973</pos>
+      <format>%Y</format>
+    </datetime>
+
+    <text name="md_developer">
+      <origin>1 0</origin>
+      <pos>0.656 0.95</pos>      
+    </text>
+
+    <text name="md_publisher">
+      <origin>0 0</origin>
+      <pos>0.676 0.95</pos>
+    </text>
+
+    <text name="md_favorite">
+      <origin>1 1</origin>
+      <pos>.9 .9</pos>
+      <text>LOL</text>
+    </text>
+
+  </view>
+</theme>

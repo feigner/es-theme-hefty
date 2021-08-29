@@ -1,0 +1,51 @@
+<theme>
+   <formatVersion>4</formatVersion>
+   <include>./../theme.xml</include>
+   <view name="detailed, video">
+
+      <!-- hide metadata-->
+      <text name="md_developer,md_publisher,md_playcount,md_lbl_lastplayed,md_lbl_players,md_players,md_lbl_releasedate,md_lbl_genre,md_genre">
+         <pos>1 1</pos>
+         <origin>0 0</origin>
+         <pos>-1 -1</pos>         
+      </text>
+
+      <!-- hide dates -->
+      <datetime name="md_lastplayed,md_releasedate">
+         <pos>1 1</pos>
+      </datetime>
+
+      <!-- hide rating -->
+      <rating name="md_rating">
+         <color>FFFFFF</color>
+         <origin>0 0</origin>
+         <pos>1 1</pos>
+      </rating>    
+
+      <!-- hide bg -->
+      <image name="md_image">
+         <visible>false</visible>
+      </image>  
+
+      <image name="md_thumbnail" extra="true">
+         <origin>0.5 0.5</origin>
+         <pos>0.666 0.4</pos>
+         <maxSize>.6 .6</maxSize>
+         <zIndex>1000</zIndex>
+      </image>
+      
+      <text name="md_description">
+         <forceUppercase>1</forceUppercase>
+         <fontPath>./../_inc/fonts/pixel.ttf</fontPath>
+         <fontSize>0.0175</fontSize>
+         <alignment>center</alignment>
+         <origin>0.5 0</origin>
+         <pos>0.666 0.8</pos>
+         <size>0.45 0.13</size>
+         <visible>true</visible>      
+         <color>FFFFFF</color>
+         <zIndex>1000</zIndex>
+      </text>
+  
+   </view>
+</theme>
